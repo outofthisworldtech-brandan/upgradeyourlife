@@ -1,0 +1,12 @@
+{
+	"console.log()": {
+		"scope": "javascript,typescriptreact",
+		"prefix": ["con", "log"],
+		"body": ["console.log('$1');"],
+	},
+	"const = () =>": {
+		"scope": "javascript,typescriptreact",
+		"prefix": ["arrow", "const"],
+		"body": ["const $1= () => {$2};"],
+	}
+}

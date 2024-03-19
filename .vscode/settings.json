@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        ".husky": true,
+        ".gitignore": true,
+        "index.html": false,
+        "package-lock.json": true,
+        "package.json": false,
+        "postcss.config.js": true,
+        "tailwind.config.js": true,
+        "vite.config.js": true,
+        ".npmrc": false,
+        "tsconfig.json": true
+    },
+    "editor.snippetSuggestions": "top"
+}

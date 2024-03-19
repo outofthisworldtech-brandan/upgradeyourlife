@@ -1,0 +1,64 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+	--theme-dark-accent-color: #00e8c5;
+	--theme-dark-primary-bg-color: #242424;
+	--theme-dark-active-text-color: #000000;
+	--theme-dark-active-hover-color: #e3e3e5aa;
+
+	--theme-light-accent-color: #598cf3;
+	--theme-light-primary-bg-color: #ffffff;
+	--theme-light-secondary-bg-color: #fafafa;
+	--theme-light-dark-bg-color: #21252c;
+	--theme-light-text-color: #d8dae1;
+	--theme-light-dark-text-color: #393939;
+	--theme-light-active-text-color: #ffffff;
+	--theme-light-active-hover-color: #3a3f4b;
+
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: var(--theme-light-dark-text-color);
+	background-color: var(--theme-light-primary-bg-color);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+body.dark {
+	color: rgba(255, 255, 255, 0.87);
+	background-color: var(--theme-dark-primary-bg-color);
+}
+
+#app {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.logo {
+	height: 6em;
+	padding: 1.5em;
+}
+
+.logo:hover {
+	filter: drop-shadow(0 0 2em var(--theme-dark-primary-bg-color));
+}
+
+body.dark .logo:hover {
+	filter: drop-shadow(0 0 2em var(--theme-dark-active-hover-color));
+}

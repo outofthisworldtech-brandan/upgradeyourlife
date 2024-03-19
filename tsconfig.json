@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"types": ["vite/client"],
+		"paths": {
+			"@/*": ["src/*"],
+			"@/imgs/*": ["./assets/imgs/*"],
+			"react": ["./node_modules/preact/compat/"],
+			"react-dom": ["./node_modules/preact/compat/"]
+		},
+		"strict": true,
+		"skipLibCheck": true,
+		"noImplicitAny": true,
+		"importHelpers": true,
+		"inlineSources": true,
+		"inlineSourceMap": true,
+		"strictNullChecks": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}
